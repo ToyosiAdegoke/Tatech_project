@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+      h2 {
+        text-align: center;
+        color: aqua;
+        font-size: xx-large;
+      }
+form label {
+    display: block;
+    margin-top: 1rem;
+}
+
+form input, form select, form textarea {
+    width: 80%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+form button {
+    background-color: rgb(62, 0, 128);
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form button:hover {
+    background-color: #218838;
+}
+img {
+    width: 90px;
+    height: 90px;
+    margin-right: 180px;
+}
+div {
+    background-color: rgb(62, 0, 128);
+    display: flex;
+}
+    </style>
+</head>
+<body>
+    <div>
+    <img src="assets/tatech.png" alt="TATECHHUB Logo" class="logo">
+    <h2>Join Us</h2>
+    </div>
+    <form id="userForm">
+        <label for="name">FullName:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+
+        <label for="service">Service of Interest:</label>
+        <select id="service" name="service" required>
+            <option value="web-development">Web Development</option>
+            <option value="Python Coding">Python Coding</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Back-end">Back-End</option>
+            <option value="Front-end">Front-End</option>
+            <option value="data-analysis">Data Analysis</option>
+        </select>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments"></textarea><br>
+
+        <button type="submit">Submit</button>
+    </form>
+        <script src="script.js"></script>
+</body>
+</html>
